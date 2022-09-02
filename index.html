@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- font awesome-->
+    <script
+      src="https://kit.fontawesome.com/8d7b7c02c4.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- google font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <!-- css link -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- javascript -->
+    <script src="./script.js" defer></script>
+
+    <title>World Cup Landing Page</title>
+  </head>
+  <body>
+    <header id="main-header" class="main-header">
+      <div class="top">
+        <div class="container flex">
+          <div class="logo-area">
+            <img src="./images/logo.png" alt="" class="logo" />
+          </div>
+
+          <nav class="nav">
+            <button class="close-btn">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <ul class="nav__list flex">
+              <li><a class="link" href="#main-header">Home</a></li>
+              <li><a class="link" href="#groups-section">Groups</a></li>
+              <li><a class="link" href="#stadiums-section">Stadiums</a></li>
+              <li><a class="link" href="#discover">Discover Qatar</a></li>
+              <li><a href="#" class="cta">Get Tickets</a></li>
+            </ul>
+          </nav>
+
+          <button class="menu-btn bt">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+
+      <section class="hero">
+        <div class="container flex">
+          <img src="./images/cup.svg" alt="" class="cup-img" />
+
+          <div class="hero__text">
+            <h1 class="title">Qatar 2022</h1>
+            <h2>Now is All™</h2>
+            <p class="intro">
+              As we count down to the start of the global showpiece in Qatar on
+              20 November, FIFA+ is showcasing 100 of the greatest moments in
+              FIFA World Cup history.
+            </p>
+
+            <div class="ctas flex">
+              <a href="#" class="cta bg-white">Get Tickets</a>
+              <a href="#groups-section" class="cta bg-transparent"
+                >View Groups</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <!-- groups -->
+    <section id="groups-section">
+      <div class="container">
+        <header class="section__header flex">
+          <h2 class="section__title">Groups</h2>
+          <div class="controls flex">
+            <button class="prev-btn">
+              <span><i class="fa-solid fa-angle-left"></i></span>
+            </button>
+            <button class="next-btn">
+              <span><i class="fa-solid fa-angle-right"></i></span>
+            </button>
+          </div>
+        </header>
+
+        <!-- groups -->
+        <div class="groups scroll-container">
+          <!-- group -->
+          <article class="group flex">
+            <h3 class="group__title">Group A</h3>
+            <ul class="group__list">
+              <li>
+                <img src="./images/flags/qatar.jpg" alt="" class="flag-img" />
+                <span>Qatar</span>
+              </li>
+              <li>
+                <img
+                  src="./images/flags/equador.jpg"
+                  alt=""
+                  class="flag-img"
+                /><span>Equador</span>
+              </li>
+              <li>
+                <img src="./images/flags/senegal.jpg" alt="" class="flag-img" />
+                <span>Senegal</span>
+              </li>
+              <li>
+                <img
+                  src="./images/flags/netherlands.jpg"
+                  alt=""
+                  class="flag-img"
+                /><span>Netherlands</span>
+              </li>
+            </ul>
+          </article>
+
+          <!-- group -->
+          <article class="group flex">
+            <h3 class="group__title">Group B</h3>
+            <ul class="group__list">
+              <li>
+                <img
+                  src="./images/flags/england.jpg"
+                  alt=""
+                  class="flag-img"
+                /><span>England</span>
+              </li>
+              <li>
+                <img
+                  src="./images/flags/iran.jpg"
+                  alt=""
+                  class="flag-img"
+                /><span>Iran</span>
+              </li>
+              <li>
+                <img
+                  src="./images/flags/usa.jpg"
+                  alt=""
+                  class="flag-img"
+                /><span>USA</span>
+              </li>
+              <li>
+                <img
+                  src="./images/flags/wales.jpg"
+                  alt=""
+                  class="flag-img"
+                /><span>Wales</span>
+              </li>
+            </ul>
+          </article>
+
+          <!-- group -->
+          <article class="group flex">
+            <h3 class="group__title">Group C</h3>
+            <ul class="group__list">
+              <li>
+                <img
+                  src="./images/flags/argentina.jpg"
+                  alt=""
+                  class="flag-img"
+                />
+                <span>Argentina</span>
+              </li>
+              <li>
+                <img src="./images/flags/ksa.jpg" alt="" class="flag-img" />
+                <span>Saudi Arabia</span>
+              </li>
+              <li>
+                <img
+                  src="./images/flags/mexico.jpg"
+                  alt=""
+                  class="flag-img"
+                /><span>Mexico</span>
+              </li>
+              <li>
+                <img
+                  src="./images/flags/poland.jpg"
+                  alt=""
+                  class="flag-img"
+                /><span>Poland</span>
+              </li>
+            </ul>
+          </article>
+
+          <!-- group -->
+          <article class="group flex">
+            <h3 class="group__title">Group D</h3>
+            <ul class="group__list">
+              <li>
+                <img src="./images/flags/france.png" alt="" class="flag-img" />
+                <span>France</span>
+              </li>
+              <li>
+                <img
+                  src="./images/flags/australia.png"
+                  alt=""
+                  class="flag-img"
+                />
+                <span>Australia</span>
+              </li>
+              <li>
+                <img src="./images/flags/denmark.png" alt="" class="flag-img" />
+                <span>Denmark</span>
+              </li>
+              <li>
+                <img src="./images/flags/tunisia.png" alt="" class="flag-img" />
+                <span>Tunisia</span>
+              </li>
+            </ul>
+          </article>
+
+          <!-- group -->
+          <article class="group flex">
+            <h3 class="group__title">Group E</h3>
+            <ul class="group__list">
+              <li>
+                <img src="./images/flags/spain.png" alt="" class="flag-img" />
+                <span>Spain</span>
+              </li>
+              <li>
+                <img
+                  src="./images/flags/costa-rica.png"
+                  alt=""
+                  class="flag-img"
+                />
+                <span> Costa Rica</span>
+              </li>
+              <li>
+                <img src="./images/flags/germany.png" alt="" class="flag-img" />
+                <span>Germany</span>
+              </li>
+              <li>
+                <img src="./images/flags/japan.png" alt="" class="flag-img" />
+                <span>Japan</span>
+              </li>
+            </ul>
+          </article>
+
+          <!-- group -->
+          <article class="group flex">
+            <h3 class="group__title">Group F</h3>
+            <ul class="group__list">
+              <li>
+                <img src="./images/flags/belgium.png" alt="" class="flag-img" />
+                <span>Belgium</span>
+              </li>
+              <li>
+                <img src="./images/flags/canada.png" alt="" class="flag-img" />
+                <span> Canada</span>
+              </li>
+              <li>
+                <img src="./images/flags/morocco.png" alt="" class="flag-img" />
+                <span>Morroco</span>
+              </li>
+              <li>
+                <img src="./images/flags/crotia.png" alt="" class="flag-img" />
+                <span>Crotia</span>
+              </li>
+            </ul>
+          </article>
+
+          <!-- group -->
+          <article class="group flex">
+            <h3 class="group__title">Group G</h3>
+            <ul class="group__list">
+              <li>
+                <img src="./images/flags/brazil.png" alt="" class="flag-img" />
+                <span>Brazil</span>
+              </li>
+              <li>
+                <img src="./images/flags/serbia.png" alt="" class="flag-img" />
+                <span>Serbia</span>
+              </li>
+              <li>
+                <img
+                  src="./images/flags/switzerland.png"
+                  alt=""
+                  class="flag-img"
+                />
+                <span>Switzerland</span>
+              </li>
+              <li>
+                <img
+                  src="./images/flags/cameroon.png"
+                  alt=""
+                  class="flag-img"
+                />
+                <span>Cameroon</span>
+              </li>
+            </ul>
+          </article>
+
+          <!-- group -->
+          <article class="group flex">
+            <h3 class="group__title">Group H</h3>
+            <ul class="group__list">
+              <li>
+                <img
+                  src="./images/flags/portugal.png"
+                  alt=""
+                  class="flag-img"
+                />
+                <span>Portugal</span>
+              </li>
+              <li>
+                <img src="./images/flags/ghana.png" alt="" class="flag-img" />
+                <span>Ghana</span>
+              </li>
+              <li>
+                <img src="./images/flags/uruguay.png" alt="" class="flag-img" />
+                <span>Uruguay</span>
+              </li>
+              <li>
+                <img
+                  src="./images/flags/south-korea.png"
+                  alt=""
+                  class="flag-img"
+                />
+                <span>South Korea</span>
+              </li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <div class="countdown">
+      <div class="container flex">
+        <h2 class="title">Countdown to <span>Qatar 2022</span></h2>
+        <div class="content flex">
+          <img src="./images/coundown-left-design.svg" alt="" class="design" />
+          <div>
+            <p>days</p>
+            <span></span>
+          </div>
+          <div>
+            <p>hours</p>
+            <span></span>
+          </div>
+          <div>
+            <p>minutes</p>
+            <span></span>
+          </div>
+          <div>
+            <p>seconds</p>
+            <span></span>
+          </div>
+          <img src="./images/coundown-right-design.svg" alt="" class="design" />
+        </div>
+      </div>
+    </div>
+
+    <!-- stadims -->
+    <section id="stadiums-section">
+      <div class="container">
+        <header class="section__header flex">
+          <h2 class="section__title">Stadiums</h2>
+          <div class="controls flex">
+            <button class="prev-btn">
+              <span><i class="fa-solid fa-angle-left"></i></span>
+            </button>
+            <button class="next-btn">
+              <span><i class="fa-solid fa-angle-right"></i></span>
+            </button>
+          </div>
+        </header>
+
+        <div class="stadiums scroll-container">
+          <!-- stadium -->
+          <article class="stadium">
+            <img
+              src="./images/stadiums/lusail.jpg"
+              alt=""
+              class="stadium-img"
+            />
+            <div class="stadium__info">
+              <p class="stadium-name">Lusail Stadium</p>
+              <span class="capacity">Capacity:80000</span>
+            </div>
+          </article>
+
+          <!-- stadium -->
+          <article class="stadium">
+            <img src="./images/stadiums/bayt.jpg" alt="" class="stadium-img" />
+            <div class="stadium__info">
+              <p class="stadium-name">Al Bayt Stadium</p>
+              <span class="capacity">Capacity:60000</span>
+            </div>
+          </article>
+
+          <!-- stadium -->
+          <article class="stadium">
+            <img
+              src="./images/stadiums/janoub.jpg"
+              alt=""
+              class="stadium-img"
+            />
+            <div class="stadium__info">
+              <p class="stadium-name">Al Janoub Stadium</p>
+              <span class="capacity">Capacity:40000</span>
+            </div>
+          </article>
+
+          <!-- stadium -->
+          <article class="stadium">
+            <img
+              src="./images/stadiums/khalifa-international-stadium.jpg"
+              alt=""
+              class="stadium-img"
+            />
+            <div class="stadium__info">
+              <p class="stadium-name">Khalifa International Stadium</p>
+              <span class="capacity">Capacity:40000</span>
+            </div>
+          </article>
+
+          <!-- stadium -->
+          <article class="stadium">
+            <img
+              src="./images/stadiums/ahmad-bin-ali-stadium.jpg"
+              alt=""
+              class="stadium-img"
+            />
+            <div class="stadium__info">
+              <p class="stadium-name">Ahmad Bin Ali Stadium</p>
+              <span class="capacity">Capacity:40000</span>
+            </div>
+          </article>
+
+          <!-- stadium -->
+          <article class="stadium">
+            <img
+              src="./images/stadiums/stadium-974.jpg"
+              alt=""
+              class="stadium-img"
+            />
+            <div class="stadium__info">
+              <p class="stadium-name">Stadium 974</p>
+              <span class="capacity">Capacity:40000</span>
+            </div>
+          </article>
+
+          <!-- stadium -->
+          <article class="stadium">
+            <img
+              src="./images/stadiums/al-thumana.jpg"
+              alt=""
+              class="stadium-img"
+            />
+            <div class="stadium__info">
+              <p class="stadium-name">Al Thumana Stadium</p>
+              <span class="capacity">Capacity:40000</span>
+            </div>
+          </article>
+
+          <!-- stadium -->
+          <article class="stadium">
+            <img
+              src="./images/stadiums/aducation-city.jpg"
+              alt=""
+              class="stadium-img"
+            />
+            <div class="stadium__info">
+              <p class="stadium-name">Education City Stadium</p>
+              <span class="capacity">Capacity:40000</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- discover -->
+    <section id="discover">
+      <div class="container">
+        <h2 class="section__title">Discover Qatar</h2>
+        <div class="places">
+          <!-- place -->
+          <article class="place">
+            <img
+              src="./images/places/national-museum.jpg"
+              alt=""
+              class="place-img"
+            />
+            <div class="place__info">
+              <h4 class="name">National Museum of Qatar</h4>
+              <p class="desc">A Glimpse of Qatar’s History</p>
+            </div>
+          </article>
+
+          <!-- place -->
+          <article class="place">
+            <img src="./images/places/mathaf.jpg" alt="" class="place-img" />
+            <div class="place__info">
+              <h4 class="name">Mathaf</h4>
+              <p class="desc">Haven For The Modern Art</p>
+            </div>
+          </article>
+
+          <!-- place -->
+          <article class="place">
+            <img src="./images/places/film-city.jpg" alt="" class="place-img" />
+            <div class="place__info">
+              <h4 class="name">Film City</h4>
+              <p class="desc">The Mystery Village Of Qatar</p>
+            </div>
+          </article>
+
+          <article class="place">
+            <img src="./images/places/katara.jpg" alt="" class="place-img" />
+            <div class="place__info">
+              <h4 class="name">Katara Cultural Village</h4>
+              <p class="desc">A Highlight Of The Vibrant Culture Of Qatar</p>
+            </div>
+          </article>
+
+          <article class="place">
+            <img
+              src="./images/places/islamic-art-museum.jpg"
+              alt=""
+              class="place-img"
+            />
+            <div class="place__info">
+              <h4 class="name">Museum Of Islamic Art</h4>
+              <p class="desc">
+                Get A Sight Of The Holy Quran From The Seventeenth Century
+              </p>
+            </div>
+          </article>
+
+          <article class="place">
+            <img src="./images/places/zubara.jpg" alt="" class="place-img" />
+            <div class="place__info">
+              <h4 class="name">Al Zubarah Fort</h4>
+              <p class="desc">
+                A Fort That Ageing Back To The 17th-18th Century
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="container flex">
+        <div class="logo-area">
+          <img src="./images/logo.png" alt="" class="logo" />
+        </div>
+
+        <ul class="socials flex">
+          <li>
+            <i class="fa-brands fa-facebook"></i>
+          </li>
+          <li>
+            <i class="fa-brands fa-twitter"></i>
+          </li>
+          <li>
+            <i class="fa-brands fa-instagram"></i>
+          </li>
+          <li>
+            <i class="fa-brands fa-linkedin"></i>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<!-- [x]  work on the main header -->
+<!-- [x]  delete colors.scss -->
+<!-- [] -->
+<!-- [] code refactor -->

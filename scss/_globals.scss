@@ -1,0 +1,67 @@
+.container {
+  width: min(90%, 1100px);
+  margin: 0 auto;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  line-height: 1.2;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.cta {
+  padding: 0.5rem;
+  width: 130px;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.25s ease;
+  font-size: 0.9rem;
+}
+
+.logo {
+  width: 8rem;
+}
+
+.section__header {
+  justify-content: space-between;
+  padding-bottom: 1.5rem;
+}
+
+.section__title {
+  color: #930b2f;
+}
+
+.controls {
+  gap: 4rem;
+}
+
+.next-btn,
+.prev-btn {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #130f26;
+}
+
+@media (hover: hover) {
+  .next-btn:hover,
+  .prev-btn:hover {
+    transform: scale(1.1);
+  }
+}

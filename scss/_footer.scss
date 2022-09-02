@@ -1,0 +1,30 @@
+.footer {
+  padding: 2rem 0;
+
+  .container {
+    flex-direction: column;
+
+    @media (min-width: 750px) {
+      & {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    }
+  }
+
+  .socials {
+    gap: 1rem;
+  }
+  .socials > * {
+    color: #640621;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: transform 0.25s ease;
+  }
+
+  @media (hover: hover) {
+    .socials > *:hover {
+      transform: scale(1.1);
+    }
+  }
+}
