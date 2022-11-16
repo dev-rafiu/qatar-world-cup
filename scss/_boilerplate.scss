@@ -1,3 +1,13 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400|Inconsolata:400");
+
+:root {
+  --clr-light: #8c0a2e;
+  --clr-very-light: #ff004c;
+  --clr-dark: #691329;
+  --clr-title: #930b2f;
+  --clr-white: #fff;
+}
+
 *,
 *::before,
 *::after {
@@ -26,6 +36,7 @@ h4 {
 
 body {
   font-size: 100%;
-  font-family: "Poppins", sans-serif;
-  background: white;
+  // font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  background: var(--clr-white);
 }

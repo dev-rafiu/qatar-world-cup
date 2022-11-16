@@ -4,25 +4,32 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <!-- font awesome-->
     <script
       src="https://kit.fontawesome.com/8d7b7c02c4.js"
       crossorigin="anonymous"
     ></script>
-
     <!-- google font -->
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
     <!-- css link -->
     <link rel="stylesheet" href="./css/style.css" />
 
+    <!-- slider library -->
+    <link
+      rel="stylesheet"
+      href="//unpkg.com/a11y-slider@latest/dist/a11y-slider.css"
+    />
     <!-- javascript -->
     <script src="./script.js" defer></script>
 
-    <title>Qatar World Cup</title>
+    <title>Qatar 2022 World Cup</title>
   </head>
   <body>
     <header id="main-header" class="main-header">
@@ -31,12 +38,10 @@
           <div class="logo-area">
             <img src="./images/logo.png" alt="" class="logo" />
           </div>
-
           <nav class="nav">
             <button class="close-btn">
               <i class="fa-solid fa-xmark"></i>
             </button>
-
             <ul class="nav__list flex">
               <li><a class="link" href="#main-header">Home</a></li>
               <li><a class="link" href="#groups-section">Groups</a></li>
@@ -52,8 +57,8 @@
         </div>
       </div>
 
-      <section class="hero">
-        <div class="container flex">
+      <section class="banner">
+        <div class="content flex">
           <img src="./images/cup.svg" alt="" class="cup-img" />
 
           <div class="hero__text">
@@ -65,36 +70,25 @@
               FIFA World Cup history.
             </p>
 
-            <div class="ctas flex">
+            <div class="action-links flex">
               <a href="#" class="cta bg-white">Get Tickets</a>
-              <a href="#groups-section" class="cta bg-transparent"
-                >View Groups</a
-              >
+              <a href="#groups-section" class="cta bg-transparent">
+                View Groups
+              </a>
             </div>
           </div>
         </div>
       </section>
     </header>
 
-    <!-- groups -->
+    <!-- === groups section=== -->
     <section id="groups-section">
       <div class="container">
-        <header class="section__header flex">
-          <h2 class="section__title">Groups</h2>
-          <div class="controls flex">
-            <button class="prev-btn">
-              <span><i class="fa-solid fa-angle-left"></i></span>
-            </button>
-            <button class="next-btn">
-              <span><i class="fa-solid fa-angle-right"></i></span>
-            </button>
-          </div>
-        </header>
+        <h2 class="section__title">Groups</h2>
 
-        <!-- groups -->
-        <div class="groups scroll-container">
+        <ul class="slider">
           <!-- group -->
-          <article class="group flex">
+          <li class="group flex">
             <h3 class="group__title">Group A</h3>
             <ul class="group__list">
               <li>
@@ -120,10 +114,10 @@
                 /><span>Netherlands</span>
               </li>
             </ul>
-          </article>
+          </li>
 
           <!-- group -->
-          <article class="group flex">
+          <li class="group flex">
             <h3 class="group__title">Group B</h3>
             <ul class="group__list">
               <li>
@@ -155,10 +149,10 @@
                 /><span>Wales</span>
               </li>
             </ul>
-          </article>
+          </li>
 
           <!-- group -->
-          <article class="group flex">
+          <li class="group flex">
             <h3 class="group__title">Group C</h3>
             <ul class="group__list">
               <li>
@@ -188,10 +182,10 @@
                 /><span>Poland</span>
               </li>
             </ul>
-          </article>
+          </li>
 
           <!-- group -->
-          <article class="group flex">
+          <li class="group flex">
             <h3 class="group__title">Group D</h3>
             <ul class="group__list">
               <li>
@@ -215,10 +209,10 @@
                 <span>Tunisia</span>
               </li>
             </ul>
-          </article>
+          </li>
 
           <!-- group -->
-          <article class="group flex">
+          <li class="group flex">
             <h3 class="group__title">Group E</h3>
             <ul class="group__list">
               <li>
@@ -242,10 +236,10 @@
                 <span>Japan</span>
               </li>
             </ul>
-          </article>
+          </li>
 
           <!-- group -->
-          <article class="group flex">
+          <li class="group flex">
             <h3 class="group__title">Group F</h3>
             <ul class="group__list">
               <li>
@@ -265,10 +259,10 @@
                 <span>Crotia</span>
               </li>
             </ul>
-          </article>
+          </li>
 
           <!-- group -->
-          <article class="group flex">
+          <li class="group flex">
             <h3 class="group__title">Group G</h3>
             <ul class="group__list">
               <li>
@@ -296,10 +290,10 @@
                 <span>Cameroon</span>
               </li>
             </ul>
-          </article>
+          </li>
 
           <!-- group -->
-          <article class="group flex">
+          <li class="group flex">
             <h3 class="group__title">Group H</h3>
             <ul class="group__list">
               <li>
@@ -327,11 +321,12 @@
                 <span>South Korea</span>
               </li>
             </ul>
-          </article>
-        </div>
+          </li>
+        </ul>
       </div>
     </section>
 
+    <!-- ===countdown=== -->
     <div class="countdown">
       <div class="container flex">
         <h2 class="title">Countdown to <span>Qatar 2022</span></h2>
@@ -361,21 +356,10 @@
     <!-- stadims -->
     <section id="stadiums-section">
       <div class="container">
-        <header class="section__header flex">
-          <h2 class="section__title">Stadiums</h2>
-          <div class="controls flex">
-            <button class="prev-btn">
-              <span><i class="fa-solid fa-angle-left"></i></span>
-            </button>
-            <button class="next-btn">
-              <span><i class="fa-solid fa-angle-right"></i></span>
-            </button>
-          </div>
-        </header>
-
-        <div class="stadiums scroll-container">
+        <h2 class="section__title">Stadiums</h2>
+        <ul class="stadiums slider-2 slider">
           <!-- stadium -->
-          <article class="stadium">
+          <li class="stadium">
             <img
               src="./images/stadiums/lusail.jpg"
               alt=""
@@ -385,19 +369,19 @@
               <p class="stadium-name">Lusail Stadium</p>
               <span class="capacity">Capacity:80000</span>
             </div>
-          </article>
+          </li>
 
           <!-- stadium -->
-          <article class="stadium">
+          <li class="stadium">
             <img src="./images/stadiums/bayt.jpg" alt="" class="stadium-img" />
             <div class="stadium__info">
               <p class="stadium-name">Al Bayt Stadium</p>
               <span class="capacity">Capacity:60000</span>
             </div>
-          </article>
+          </li>
 
           <!-- stadium -->
-          <article class="stadium">
+          <li class="stadium">
             <img
               src="./images/stadiums/janoub.jpg"
               alt=""
@@ -407,10 +391,10 @@
               <p class="stadium-name">Al Janoub Stadium</p>
               <span class="capacity">Capacity:40000</span>
             </div>
-          </article>
+          </li>
 
           <!-- stadium -->
-          <article class="stadium">
+          <li class="stadium">
             <img
               src="./images/stadiums/khalifa-international-stadium.jpg"
               alt=""
@@ -420,10 +404,10 @@
               <p class="stadium-name">Khalifa International Stadium</p>
               <span class="capacity">Capacity:40000</span>
             </div>
-          </article>
+          </li>
 
           <!-- stadium -->
-          <article class="stadium">
+          <li class="stadium">
             <img
               src="./images/stadiums/ahmad-bin-ali-stadium.jpg"
               alt=""
@@ -433,10 +417,10 @@
               <p class="stadium-name">Ahmad Bin Ali Stadium</p>
               <span class="capacity">Capacity:40000</span>
             </div>
-          </article>
+          </li>
 
           <!-- stadium -->
-          <article class="stadium">
+          <li class="stadium">
             <img
               src="./images/stadiums/stadium-974.jpg"
               alt=""
@@ -446,10 +430,10 @@
               <p class="stadium-name">Stadium 974</p>
               <span class="capacity">Capacity:40000</span>
             </div>
-          </article>
+          </li>
 
           <!-- stadium -->
-          <article class="stadium">
+          <li class="stadium">
             <img
               src="./images/stadiums/al-thumana.jpg"
               alt=""
@@ -459,10 +443,10 @@
               <p class="stadium-name">Al Thumana Stadium</p>
               <span class="capacity">Capacity:40000</span>
             </div>
-          </article>
+          </li>
 
           <!-- stadium -->
-          <article class="stadium">
+          <li class="stadium">
             <img
               src="./images/stadiums/aducation-city.jpg"
               alt=""
@@ -472,8 +456,8 @@
               <p class="stadium-name">Education City Stadium</p>
               <span class="capacity">Capacity:40000</span>
             </div>
-          </article>
-        </div>
+          </li>
+        </ul>
       </div>
     </section>
 
@@ -571,6 +555,7 @@
         </ul>
       </div>
     </footer>
+    <script src="//unpkg.com/a11y-slider@latest/dist/a11y-slider.js"></script>
   </body>
 </html>
 

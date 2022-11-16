@@ -1,14 +1,13 @@
 #discover {
   padding: 3rem 0;
 
-  .section__title {
-    margin-bottom: 1.5rem;
-  }
-
   .places {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1rem;
+
+    @media screen and (min-width: 768px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
   }
 
   .place {

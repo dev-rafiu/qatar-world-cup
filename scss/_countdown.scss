@@ -1,6 +1,6 @@
 .countdown {
-  color: white;
-  background-color: #691329;
+  color: var(--clr-white);
+  background-color: var(--clr-dark);
   padding: 3rem 0;
 
   .container {
@@ -12,16 +12,14 @@
       display: none;
     }
 
-    @media (min-width: 750px) {
+    @media (min-width: 768px) {
       & {
         flex-direction: row;
         justify-content: space-between;
       }
-
       .title {
         max-width: 200px;
       }
-
       .design {
         display: inline;
       }
@@ -30,14 +28,12 @@
 
   .content {
     gap: 1rem;
-
     div {
       text-transform: uppercase;
       text-align: center;
     }
-
     span {
-      color: #ff004c;
+      color: var(--clr-very-light);
     }
   }
 }

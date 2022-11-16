@@ -1,3 +1,17 @@
+const slider = new A11YSlider(document.querySelector(".slider"), {
+  adaptiveHeight: true,
+  dots: true,
+  arrows: false,
+});
+
+const slider2 = new A11YSlider(document.querySelector(".slider-2"), {
+  adaptiveHeight: true,
+  dots: true,
+  arrows: false,
+});
+
+// const slider = new A11YSlider(document.querySelector(".slider"));
+
 window.addEventListener("DOMContentLoaded", () => {
   setCountDown();
 });
@@ -14,26 +28,6 @@ closeBtn.addEventListener("click", () => {
   nav.classList.remove("display");
 });
 
-// ***slider***
-let groups = document.querySelectorAll(".groups");
-const nextBtn = document.querySelector(".next-btn");
-const prevBtn = document.querySelector(".prev-btn");
-
-const scrollContainers = document.querySelectorAll(".scroll-container");
-scrollContainers.forEach((container) => {
-  const sibling = container.previousElementSibling;
-  const nextBtn = sibling.querySelector(".next-btn");
-  const prevBtn = sibling.querySelector(".prev-btn");
-
-  nextBtn.addEventListener("click", () => {
-    container.scrollLeft += 280;
-  });
-
-  prevBtn.addEventListener("click", () => {
-    container.scrollLeft -= 280;
-  });
-});
-
 const links = document.querySelectorAll(".link");
 links.forEach((link) => {
   link.addEventListener("click", (e) => {
@@ -41,7 +35,7 @@ links.forEach((link) => {
   });
 });
 
-// ***count down***
+// ===count down===
 const container = document.querySelector(".countdown .content");
 const values = document.querySelectorAll(".countdown .content span");
 const worldCupDate = new Date(2022, 10, 20, 16, 0, 0);
