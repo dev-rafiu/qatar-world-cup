@@ -39,6 +39,7 @@ links.forEach((link) => {
 const container = document.querySelector(".countdown .content");
 const values = document.querySelectorAll(".countdown .content span");
 const worldCupDate = new Date(2022, 10, 20, 16, 0, 0);
+
 function setCountDown() {
   const dateNow = new Date();
   const timeLeft = worldCupDate - dateNow;
@@ -52,21 +53,22 @@ function setCountDown() {
   const minutes = Math.floor((timeLeft % oneHour) / oneMinute);
   const seconds = Math.floor((timeLeft % oneMinute) / 1000);
   let result = [days, hours, minutes, seconds];
+
   values.forEach((item, index) => {
     item.innerText = result[index];
   });
 
   if (timeLeft <= -oneDay) {
-    container = "World cup has already started";
+    container.innerText = "World cup is in progress";
     clearInterval(timer);
     return;
   }
 
-  if (timeLeft <= 0) {
-    section.innerText = "In progress";
-    clearInterval(timer);
-    return;
-  }
+  // if (timeLeft <= 0) {
+  //   section.innerText = "In progress";
+  //   clearInterval(timer);
+  //   return;
+  // }
 }
 
 const timer = setInterval(() => {
